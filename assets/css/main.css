@@ -456,7 +456,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: black;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -1496,12 +1496,10 @@ section,
   margin-bottom: 0;
   padding: 0 30px 30px 30px;
 }
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-
-
-
 .clients .swiper {
   padding: 10px 0;
 }

@@ -169,7 +169,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="Home" class="active">Home<br></a></li>
+            <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="about.html">About</a></li>
             <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="products.html">Products</a></li>
@@ -180,9 +180,9 @@
 
             <div id="google_translate_element"></div>
 
-            <!-- <button id="translate_btn" onclick="toggleLanguage()">
+            <button id="translate_btn" onclick="toggleLanguage()">
               Arabic
-            </button> -->
+            </button>
             <!-- <button onclick="resetToEnglish()">English</button> -->
 
 
@@ -320,68 +320,66 @@
 </section><!-- /About Section -->
 
 
-    <!-- GalleryZ -->
 
-    <section id="gallery" class="gallery section light-background">
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p><span>Check</span> <span class="description-title">Our Gallery</span></p>
-      </div> -->
-      <!-- End Section Title -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "direction": "rtl",  /* <-- Set direction to right-to-left */
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
+
+
+
+
+
+
+
+<!-- Clients Section -->
+<section id="clients" class="clients section">
+  <div class="container">
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": 6,
+          "spaceBetween": 20,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            },
+            "480": {
+              "slidesPerView": 3,
+              "spaceBetween": 30
+            },
+            "640": {
+              "slidesPerView": 4,
+              "spaceBetween": 40
+            },
+            "992": {
+              "slidesPerView": 6,
+              "spaceBetween": 50
             }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <!-- <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets\img\egg[1].jpg" class="img-fluid" alt=""></a></div> -->
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets\img\dairy[1].jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets\img\rice.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets\img\frozenckn[1].jpg" class="img-fluid" alt=""></a></div>
-            <!-- <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets/img/download (4).jpg" class="img-fluid" alt=""></a></div> -->
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets/img/download (2).jpg" class="img-fluid" alt=""></a></div>
-            <!-- <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets/img/download (4).jpg" class="img-fluid" alt=""></a></div> -->
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"><img src="assets/img/download (2).jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets/img/download (4).jpg" class="img-fluid" alt=""></a></div>
-            <!-- <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" ><img src="assets/img/download (4).jpg" class="img-fluid" alt=""></a></div> -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+          }
+          
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="assets/img/brands/2560px-Saudia_logo 1@2x.png" class="img-fluid" alt="" style="width: 120px;"></div>
+        <div class="swiper-slide"><img src="assets/img/brands/alfai.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/brands/allrabie.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/brands/lipton.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/brands/pepsico.png" class="img-fluid" alt="" style="filter: grayscale(100%) brightness(0);"></div>
+        <div class="swiper-slide"><img src="assets/img/brands/ulker.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/brands/2560px-Saudia_logo 1@2x.png" class="img-fluid" alt="" style="width: 120px;"></div>
+        <div class="swiper-slide"><img src="assets/img/brands/alfai.png" class="img-fluid" alt=""></div>
       </div>
-    </section><!-- /Gallery Section -->
-    
-
+    </div>
+  </div>
+</section>
 
 
 
@@ -548,7 +546,7 @@
               <img src="assets\img\oil.png" class="img-fluid  styled-img" alt="Brand Image">
             </a>
             <div class="Brand1-info">
-              <h4><a href="products.html#features1" title="More Details">OIL FOOD </a></h4>
+              <h4><a href="Brand1-details.html" title="More Details">OIL FOOD </a></h4>
               <p style="color: rgba(0, 0, 0, 0.703);">Lorem ipsum, dolor sit amet</p>
             </div>
           </div>
@@ -573,7 +571,7 @@
               <img src="assets\img\download (2).jpg" class="img-fluid  styled-img" alt="Brand Image">
             </a>
             <div class="Brand1-info">
-              <h4><a href="products.html#features2" title="More Details">BAKERY</a></h4>
+              <h4><a href="Brand1-details.html" title="More Details">BAKERY</a></h4>
               <p style="color: rgba(0, 0, 0, 0.703);">Lorem ipsum, dolor sit amet</p>
             </div>
           </div>
@@ -588,71 +586,6 @@
   </div>
 
 </section><!-- /Brand Section -->
-
-
-   
-<!-- <section id="team" class="team section"> -->
-  <!-- <div class="container section-title" data-aos="fade-up"> -->
-    <h2 style="text-align: center; font-weight: bold;">Our Brands</h2>
-    <!-- <p>Committed to Exceeding Expectations and Nurturing Client Success</p> -->
-  <!-- </div> -->
-
-
-
-
-<!-- Clients Section -->
-<section id="clients" class="clients section">
-  <div class="container">
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": 6,
-          "spaceBetween": 20,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 2,
-              "spaceBetween": 20
-            },
-            "480": {
-              "slidesPerView": 3,
-              "spaceBetween": 30
-            },
-            "640": {
-              "slidesPerView": 4,
-              "spaceBetween": 40
-            },
-            "992": {
-              "slidesPerView": 6,
-              "spaceBetween": 50
-            }
-          }
-          
-        }
-      </script>
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><img src="assets/img/brands/2560px-Saudia_logo 1@2x.png" class="img-fluid" alt="" style="width: 120px;"></div>
-        <div class="swiper-slide"><img src="assets/img/brands/alfai.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/brands/allrabie.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/brands/lipton.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/brands/pepsico.png" class="img-fluid" alt="" style="filter: grayscale(100%) brightness(0);"></div>
-        <div class="swiper-slide"><img src="assets/img/brands/ulker.png" class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/brands/2560px-Saudia_logo 1@2x.png" class="img-fluid" alt="" style="width: 120px;"></div>
-        <div class="swiper-slide"><img src="assets/img/brands/alfai.png" class="img-fluid" alt=""></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
    <!-- Client Section,, Team member -->
