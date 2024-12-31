@@ -947,6 +947,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
   position: relative;
@@ -1033,16 +1034,16 @@ section,
   color: var(--default-color);
 }
 
+
 @media (max-width: 640px) {
   .hero h2 {
-    font-size: 36px;
+    font-size: 16px;
   }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
+  .hero-title {
+    font-size: 16px;
   }
 }
+
 
 .hero .icon-boxes {
   padding-bottom: 60px;
@@ -1079,7 +1080,7 @@ section,
 .hero .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .hero .icon-box .title a {
@@ -1103,7 +1104,7 @@ section,
 
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
-  color: var(--contrast-color);
+  color: white;
 }
 
 
@@ -1127,11 +1128,11 @@ section,
 .icon-box .title {
   font-weight: 700;
   margin-bottom: 10px; /* Adjust spacing below the title */
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .icon-box p {
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 1.5;
   margin-bottom: 0;
 }
@@ -1140,7 +1141,6 @@ section,
   transform: translateY(-5px);
   box-shadow: 0px 0 30px rgba(127, 137, 161, 0.35);
 }
-
 
 
 .hero-bg-container {
@@ -1157,7 +1157,7 @@ section,
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: slide-bg 12s infinite;
+  animation: slide-bg 12s infinite ease-in-out;
 }
 
 .hero-bg-container .hero-bg:nth-child(1) {
@@ -1176,7 +1176,10 @@ section,
   0% {
     opacity: 0;
   }
-  25% {
+  15% {
+    opacity: 1;
+  }
+  33% {
     opacity: 1;
   }
   50% {
@@ -1188,20 +1191,19 @@ section,
 }
 .sliding-titles {
   position: relative;
-  height: auto; /* Allow height to adapt dynamically */
-  min-height: 80px; /* Ensure enough height for larger text */
+  height: 110px; /* Ensure enough height to display one title at a time */
   overflow: hidden;
 }
 
 .sliding-titles .hero-title {
   position: absolute;
   width: 100%;
-  font-size: 2rem; /* Adjust text size as needed */
-  text-align: left; /* Align text properly */
-  line-height: 1.2; /* Adjust line height for spacing */
+  font-size: 3.2rem; /* Adjust text size as needed */
+  text-align: left; /* Ensure proper alignment */
+  line-height: 1.2; /* Adjust line spacing for readability */
   opacity: 0;
   transform: translateY(100%);
-  animation: slide-text 12s infinite;
+  animation: slide-text 12s infinite ease-in-out;
 }
 
 .sliding-titles .hero-title:nth-child(1) {
@@ -1221,9 +1223,13 @@ section,
     opacity: 0;
     transform: translateY(100%);
   }
-  25% {
+  15% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0%);
   }
   50% {
     opacity: 0;
@@ -1234,6 +1240,24 @@ section,
     transform: translateY(-100%);
   }
 }
+@media (max-width: 480px) {
+  .sliding-titles {
+    position: relative;
+    height: 90px; /* Ensure enough height to display one title at a time */
+    overflow: hidden;
+  }
+  
+  .sliding-titles .hero-title {
+    position: absolute;
+    width: 100%;
+    font-size: 2.3rem; /* Adjust text size as needed */
+    text-align: left; /* Ensure proper alignment */
+    line-height: 1.2; /* Adjust line spacing for readability */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-text 12s infinite ease-in-out;
+  }}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1244,7 +1268,7 @@ section,
 .about .content .who-we-are {
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #ffc501;
 }
 
 .about .content h3 {
@@ -1276,7 +1300,7 @@ section,
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px;
@@ -1497,11 +1521,29 @@ section,
   padding: 0 30px 30px 30px;
 }
 
+
+
+.clients {
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
 .clients .swiper {
-  padding: 10px 0;
+  padding: 0; /* Remove padding */
 }
 
 .clients .swiper-wrapper {
@@ -1520,7 +1562,7 @@ section,
 # Stats Section
 --------------------------------------------------------------*/
 .stats .stats-item {
-  padding: 10px;
+  padding: 0; /* Remove padding */
 }
 
 .stats .stats-item i {
@@ -1540,12 +1582,11 @@ section,
 
 .stats .stats-item p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  padding: 15px 0 0 0;
+  padding: 0; /* Remove padding */
   margin: 0;
   font-family: var(--heading-font);
   font-size: 17px;
   font-weight: 800;
-
 }
 
 .stats-item span {
@@ -1554,6 +1595,17 @@ section,
   font-weight: 700;
   color: var(--heading-color);
   line-height: 40px;
+}
+@media (max-width: 480px) {
+  #clients,
+  #stats {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .swiper-slide img {
+    max-width: 100%; /* Ensure proper scaling */
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2474,31 +2526,39 @@ section,
 .features .features-item h3 {
   font-weight: 700;
   font-size: 26px;
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 .features .features-item ul {
   list-style: none;
   padding: 0;
+  text-align: start;
+  margin-bottom: 70px;
 }
 
 .features .features-item ul li {
   padding-bottom: 10px;
   display: flex;
-  align-items: center;
+  text-align: start;
+  margin-bottom: 70px;
 }
 
 .features .features-item ul li:last-child {
-  padding-bottom: 0;
-}
+  text-align: start;
+  margin-bottom: 70px;}
 
 .features .features-item ul i {
   font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
+  text-align: start;
+  margin-bottom: 70px;
 }
 
 .features .features-item p:last-child {
-  margin-bottom: 0;
+  text-align: start;
+  margin-bottom: 70px;
 }
 
 
