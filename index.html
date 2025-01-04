@@ -87,6 +87,25 @@
   </script>
 
   <style>
+
+.btn-primary {
+  font-size: 18px; /* Increase font size */
+  padding: 15px 30px; /* Increase padding for width and height */
+  border-radius: 8px; /* Optional: make the button more rounded */
+  background-color: #ffc501;
+}
+
+.swiper-pagination {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.btn-primary:hover {
+  background-color: #ffc501; /* Adjust hover color if needed */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
     iframe.skiptranslate,
     .goog-te-banner-frame,
     #google_translate_element {
@@ -170,13 +189,14 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="about.html">About</a></li>
-            <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="products.html">Products</a></li>
 
             <li><a href="services.html">Departments</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+       
            
-            <li><a href="contect-us.html">Contact</a></li>
+            <li><a href="contect-us.html">Contact Us</a></li>
 
             <div id="google_translate_element"></div>
 
@@ -212,7 +232,8 @@
               <h2 class="hero-title"><span>Premier FMCG Distributor in Saudi Arabia</span></h2>
               <h2 class="hero-title"><span>Maximizing Returns for Our Consumers</span></h2>
             </div>
-            <p style="color: rgb(255, 255, 255); font-weight: 600;padding-top: 45px;">Your Go-To Destination for Quality Food Products...</p>
+            <p style="color: rgb(255, 255, 255); font-weight: 600;padding-top: 45px;">
+              Your trusted destination for high-quality food products, meeting your needs and exceeding expectations.</p>
             <div class="d-flex">
               <a href="#about" class="btn-get-started">Get Started</a>
             </div>
@@ -267,56 +288,35 @@
 
 
 
-
-
 <!-- About Section -->
 <section id="about" class="about section">
-
   <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 align-items-center">
+      
+      <!-- Left Side Content -->
+      <div class="col-lg-6 content" data-aos="fade-right">
         <p class="who-we-are">About Us</p>
         <h3>DANNY FOOD TRADING CO.</h3>
         <p class="fst-italic">
-          As a pioneering supplier of food and beverages in the region, our unwavering commitment is to be recognized for
-          delivery 
+          As a pioneering supplier of food and beverages in the region, our unwavering commitment is to be recognized for delivery.
         </p>
         <ul>
-          <li><i class="bi bi-check-circle iconn"></i> <span> Our dedication extends beyond mere provision;</span></li>
-          <li><i class="bi bi-check-circle iconn"></i> <span>
-            We bring flavors and convenience to your table with passion.</span></li>
-          <li><i class="bi bi-check-circle iconn"></i> <span>
-            We build lasting relationships with exceptional service.</span></li>
+          <li><i class="bi bi-check-circle iconn"></i> <span>Our dedication extends beyond mere provision;</span></li>
+          <li><i class="bi bi-check-circle iconn"></i> <span>We bring flavors and convenience to your table with passion.</span></li>
+          <li><i class="bi bi-check-circle iconn"></i> <span>We build lasting relationships with exceptional service.</span></li>
         </ul>
         <a href="about.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
       </div>
 
-      <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <img src="assets/img/aboutus-company1[1].png" class="img-fluid" alt="" style="height: 430px; object-fit: cover;">
-          </div>
-          <div class="col-lg-6">
-            <div class="row gy-4">
-              <div class="col-lg-12">
-                
-                <img src="assets/img/istockphoto-1081422898-612x612.webp" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-12">
-                <img src="assets\img\gettyimages-1279763992-612x612.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <!-- Right Side Image (Full Height) -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <img src="assets/img/bg4.jpg" class="img-fluid w-100" alt="About Us Image" style="height: 52vh; border-radius: 8px; object-fit: cover;">
       </div>
+      
 
     </div>
-
   </div>
-</section><!-- /About Section -->
+</section>
 
 
 
@@ -324,10 +324,6 @@
 
 
 
-
-
-
-<!-- Clients Section -->
 <section id="clients" class="clients section">
   <div class="container">
     <div class="swiper init-swiper">
@@ -377,81 +373,74 @@
         <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-        
       </div>
+      
+      <!-- Pagination Indicators -->
+      <div class="swiper-pagination" style="padding-top: 20px;"></div>
     </div>
   </div>
+  <div class="text-center mt-4">
+    <a href="brand_detail_page.html" class="btn btn-primary btn-lg" style="color: black;font-weight: bold;">View All</a>
+  </div>
 </section>
-
 
 <!-- <div class="swiper-slide"><img src="assets/img/brands/2560px-Saudia_logo 1@2x.png" class="img-fluid" alt="" style="width: 120px;"></div> -->
         <!-- <div class="swiper-slide"><img src="assets/img/brands/alfai.png" class="img-fluid" alt=""></div> -->
     <!-- Stats Section -->
     <section id="stats" class="stats section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 align-items-center">
-
           <div class="col-lg-5">
             <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
           </div>
-
           <div class="col-lg-7">
-
             <div class="row gy-4">
-
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span >2000+</span>
+                    <span data-purecounter-start="0" data-purecounter-end="2000" class="purecounter">0</span>
                     <p><strong>TOTAL PRODUCTS</strong></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
-
+              </div>
+    
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
-                  <i class="bi bi-box  flex-shrink-0"></i>
+                  <i class="bi bi-box flex-shrink-0"></i>
                   <div>
-                    <span>200+</span>
+                    <span data-purecounter-start="0" data-purecounter-end="200" class="purecounter">0</span>
                     <p><strong>SUPPLIERS</strong></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
-
+              </div>
+    
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
-                  <i class="bi bi-trophy  flex-shrink-0"></i>
+                  <i class="bi bi-trophy flex-shrink-0"></i>
                   <div>
-                    <span>10,000+</span>
-                    <p><strong>CLIENTS
-                    </strong> </p>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" class="purecounter">0</span>
+                    <p><strong>CLIENTS</strong></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
-
+              </div>
+    
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span>20+</span>
-                    <p><strong>EXPERIENCE</strong> </p>
+                    <span data-purecounter-start="0" data-purecounter-end="20" class="purecounter">0</span>
+                    <p><strong>EXPERIENCE</strong></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
-
+              </div>
+    
             </div>
-
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Stats Section -->
-
+    </section>
+    
 
 
 
@@ -619,7 +608,7 @@
           <div class="member">
             <img src="assets/img/offices.jpg" class="img-fluid" alt="">
             <h4>OFFICES</h4>
-            <span>Supporting Productivity with Trusted Essentials</span>
+            <span>Boosting Productivity with Essentials.</span>
           
           </div>
         </div><!-- End Team Member -->
@@ -656,7 +645,7 @@
           <div class="member">
             <img src="assets/img/many-more.webp" class="img-fluid" alt="">
             <h4>MANY MORE.. </h4>
-            <span>Serving Every Need with Excellence and Beyond</span>
+            <span>Serving Every Need with Excellence.</span>
            
           </div>
         </div><!-- End Team Member -->
@@ -874,6 +863,10 @@
       }
     }
   });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+<script>
+  new PureCounter();
 </script>
 
 
