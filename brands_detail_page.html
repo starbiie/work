@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  <!-- <link rel="assets\css\main.css" href="styles.css"> -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <style>
+    .grid-container {
+      margin-top: 5px;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* Desktop View (Default) */
+    .grid-item {
+      flex: 0 0 calc(18% - 10px);
+      max-width: calc(18% - 10px);
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .grid-item img {
+      max-width: 60%;
+      max-height: 60%;
+      object-fit: contain;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Medium Screens (<768px) */
+    @media (max-width: 768px) {
+      .grid-item {
+        flex: 0 0 calc(25% - 10px);
+        max-width: calc(25% - 10px);
+        height: 120px;
+      }
+    }
+
+    /* Small Screens (<576px) - 2 Grids Per Row */
+    @media (max-width: 576px) {
+      .grid-container {
+        padding: 0 10px;
+      }
+
+      .grid-item {
+        flex: 0 0 calc(50% - 10px); /* 2 grids per row */
+        max-width: calc(50% - 10px);
+        height: 100px;
+      }
+
+      .grid-item img {
+        max-width: 70%;
+        max-height: 70%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- <h2>All Major Brands</h2> -->
+
+
+  <div class="container section-title" data-aos="fade-up">
+    <div class="header-row">
+      <div class="section-title">
+        <h2>All Major Brands</h2>
+        <p>Delivering Excellence and Driving Client Success</p>
+      </div>
+    </div>
+    <section id="ImageGrid" class="ImageGrid section">
+        <div class="container">
+      
+          <!-- Image Grid -->
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="assets/img/brands/2560px-Saudia_logo_1@2x[1].png" class="img-fluid styled-img" alt="Image 1">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/alfai[1].png" class="img-fluid styled-img" alt="Image 2">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/allrabie[1].png" class="img-fluid styled-img" alt="Image 3">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/colgate[1].jpg" class="img-fluid styled-img" alt="Image 4">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/lipton[1].png" class="img-fluid styled-img" alt="Image 5">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/luna[1].jpg" class="img-fluid styled-img" alt="Image 6">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/pepsico[1].png" class="img-fluid styled-img" alt="Image 7"style="filter: grayscale(100%) brightness(0);">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/tang[1].jpg" class="img-fluid styled-img" alt="Image 8">
+            </div>
+            <div class="grid-item">
+                <img src="assets/img/brands/tide[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+
+
+              <div class="grid-item">
+                <img src="assets/img/brands/ulker[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+            <!-- Add more images if needed -->
+          </div>
+      
+
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="assets/img/brands/2560px-Saudia_logo_1@2x[1].png" class="img-fluid styled-img" alt="Image 1">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/alfai[1].png" class="img-fluid styled-img" alt="Image 2">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/allrabie[1].png" class="img-fluid styled-img" alt="Image 3">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/colgate[1].jpg" class="img-fluid styled-img" alt="Image 4">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/lipton[1].png" class="img-fluid styled-img" alt="Image 5">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/luna[1].jpg" class="img-fluid styled-img" alt="Image 6">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/pepsico[1].png" class="img-fluid styled-img" alt="Image 7"style="filter: grayscale(100%) brightness(0);">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/tang[1].jpg" class="img-fluid styled-img" alt="Image 8">
+            </div>
+            <div class="grid-item">
+                <img src="assets/img/brands/tide[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+
+
+              <div class="grid-item">
+                <img src="assets/img/brands/ulker[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+            <!-- Add more images if needed -->
+          </div>
+
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="assets/img/brands/2560px-Saudia_logo_1@2x[1].png" class="img-fluid styled-img" alt="Image 1">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/alfai[1].png" class="img-fluid styled-img" alt="Image 2">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/allrabie[1].png" class="img-fluid styled-img" alt="Image 3">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/colgate[1].jpg" class="img-fluid styled-img" alt="Image 4">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/lipton[1].png" class="img-fluid styled-img" alt="Image 5">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/luna[1].jpg" class="img-fluid styled-img" alt="Image 6">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/pepsico[1].png" class="img-fluid styled-img" alt="Image 7"style="filter: grayscale(100%) brightness(0);">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/tang[1].jpg" class="img-fluid styled-img" alt="Image 8">
+            </div>
+            <div class="grid-item">
+                <img src="assets/img/brands/tide[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+
+
+              <div class="grid-item">
+                <img src="assets/img/brands/ulker[1].png" class="img-fluid styled-img" alt="Image 8">
+              </div>
+            <!-- Add more images if needed -->
+          </div>
+
+        </div>
+      </section>
+
+
+     
+      
+</body>
+</html>
