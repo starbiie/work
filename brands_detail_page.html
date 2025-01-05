@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Grid</title>
+<<<<<<< HEAD
   <!-- <link rel="assets\css\main.css" href="styles.css"> -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -83,12 +84,67 @@
         <p>Delivering Excellence and Driving Client Success</p>
       </div>
     </div>
+=======
+  <link rel="assets\css\main.css" href="styles.css">
+
+
+  <style>
+ .grid-container {
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 10px; /* Space between images */
+  justify-content: flex-start; /* Align items from left to right */
+}
+
+.grid-item {
+  flex: 0 0 calc(20% - 8px); /* 20% of the row width for 5 images, minus the gap adjustment */
+  max-width: calc(20% - 8px); /* Prevent items from growing beyond 20% */
+  height: 150px; /* Fixed height for each grid item */
+  overflow: hidden; /* Crop images that overflow */
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.grid-item img {
+  width: 100%; /* Make the image fit the width of the container */
+  height: 100%; /* Make the image fit the height of the container */
+  object-fit: cover; /* Ensure the image covers the entire area proportionally */
+  transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    flex: 0 0 calc(33.33% - 8px); /* 3 items per row for medium screens */
+    max-width: calc(33.33% - 8px); /* Prevent items from growing beyond 33% */
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-item {
+    flex: 0 0 calc(50% - 8px); /* 2 items per row for small screens */
+    max-width: calc(50% - 8px); /* Prevent items from growing beyond 50% */
+  }
+}
+
+
+  </style>
+
+
+</head>
+<body>
+>>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
     <section id="ImageGrid" class="ImageGrid section">
         <div class="container">
       
           <!-- Image Grid -->
           <div class="grid-container">
             <div class="grid-item">
+<<<<<<< HEAD
               <img src="assets/img/brands/2560px-Saudia_logo_1@2x[1].png" class="img-fluid styled-img" alt="Image 1">
             </div>
             <div class="grid-item">
@@ -204,3 +260,37 @@
       
 </body>
 </html>
+=======
+              <img src="assets/img/360_F_284997419_X9Os47DbGgMdUjOIViETAdQ7kvwboRBB.jpg" class="img-fluid styled-img" alt="Image 1">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/spices-seasonings-additives-bags-wallpaper-preview.jpg" class="img-fluid styled-img" alt="Image 2">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/chilled2.jpg" class="img-fluid styled-img" alt="Image 3">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/download (4).jpg" class="img-fluid styled-img" alt="Image 4">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/HD-wallpaper-smirnoff-alcohol-black-broken-dark-drink-drug-glass-ice-vodka.jpg" class="img-fluid styled-img" alt="Image 5">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/oil.png" class="img-fluid styled-img" alt="Image 6">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/fresh-fruits-vegetables-black-background_993599-8932.avif" class="img-fluid styled-img" alt="Image 7">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/download (2).jpg" class="img-fluid styled-img" alt="Image 8">
+            </div>
+            <!-- Add more images if needed -->
+          </div>
+      
+        </div>
+      </section>
+      
+      
+</body>
+</html>
+>>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
