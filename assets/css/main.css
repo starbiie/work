@@ -920,11 +920,7 @@ section,
 }
 
 .section-title h2 {
-<<<<<<< HEAD
   font-size: 27px;
-=======
-  font-size: 32px;
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -982,7 +978,6 @@ section,
   position: relative;
   z-index: 3;
 }
-<<<<<<< HEAD
 .hero-sub-titile {
   color: white;
   font-weight: 700;
@@ -1016,8 +1011,6 @@ section,
     display: block;
   }
 }
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 .hero h2 {
   font-size: 48px;
@@ -1029,15 +1022,7 @@ section,
   color: var(--conrast-color);
 }
 
-<<<<<<< HEAD
 
-=======
-.hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  font-weight: 400;
-  margin-bottom: 30px;
-}
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 .hero .btn-get-started {
   color: black;
@@ -1047,17 +1032,12 @@ section,
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-<<<<<<< HEAD
-=======
-  padding: 14px 40px;
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   border-radius: 50px;
   transition: 0.3s;
   border: 2px solid color-mix(in srgb, rgba(0, 0, 0, 0.429), transparent 70%);
   background-color: color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-<<<<<<< HEAD
 /* Web View - Default */
 .hero .btn-get-started {
   padding: 14px 40px;
@@ -1071,36 +1051,12 @@ section,
 }
 
 
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 .hero .btn-get-started:hover {
   border-color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-<<<<<<< HEAD
 
 
-=======
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  font-weight: 600;
-  color: var(--default-color);
-}
-
-.hero .btn-watch-video i {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover i {
-  color: var(--default-color);
-}
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 
 @media (max-width: 640px) {
@@ -1112,7 +1068,6 @@ section,
   }
 }
 
-<<<<<<< HEAD
 .T {
   margin-top: 3rem;
 }
@@ -1124,8 +1079,6 @@ section,
   }
 }
 
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 .hero .icon-boxes {
   padding-bottom: 60px;
@@ -1340,10 +1293,7 @@ section,
     animation: slide-text 12s infinite ease-in-out;
   }}
 
-<<<<<<< HEAD
   
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1354,11 +1304,7 @@ section,
 .about .content .who-we-are {
   text-transform: uppercase;
   margin-bottom: 15px;
-<<<<<<< HEAD
   color: color-mix(in srgb, var(--default-color), transparent 40%);
-=======
-  color: #ffc501;
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 }
 
 .about .content h3 {
@@ -1390,11 +1336,7 @@ section,
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-<<<<<<< HEAD
   font-size: 16px;
-=======
-  font-size: 13px;
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px;
@@ -1423,29 +1365,11 @@ section,
 .about .about-images img {
   border-radius: 10px;
 }
-<<<<<<< HEAD
-=======
-.about img {
-  width: 100%;
-  height: auto;
-  max-height: 52vh;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .about img {
-    height: auto;
-    max-height: 300px;  /* Adjust this value as needed */
-  }
-}
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 
 .about .content ul li .first-line {
   display: flex; 
@@ -1492,36 +1416,6 @@ section,
 
 
 
-=======
-.about .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.about .content p {
-  margin: 30px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding: 0 0 15px 0;
-  font-weight: 400;
-  display: flex;
-}
-
-.about .content ul i {
-  color: var(--accent-color);
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin-right: 0.5rem;
-}
-
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
@@ -1541,7 +1435,6 @@ section,
 }
 
 .why-us .slides {
-<<<<<<< HEAD
   height: 500px;
   background-color: color-mix(in srgb, var(--default-color), transparent 92%);
 }
@@ -1550,14 +1443,6 @@ section,
   border-radius: 10px;
   padding: 5px;
   /* background-color: rgb(204, 255, 0); */
-=======
-  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
-}
-.why-us h3 {
-  border-radius: 10px;
-  padding: 5px;
-  background-color: rgba(255, 197, 1, 0.7); 
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   font-size: 24px;
   font-weight: 700;
 }
@@ -1617,7 +1502,6 @@ section,
 
 @media (max-width: 575px) {
   .why-us .swiper {
-<<<<<<< HEAD
     margin : 40px 40px 20px 40px;
   }
   .why-us .slides {
@@ -1627,12 +1511,6 @@ section,
 }
 
 
-=======
-    margin: 40px 40px 20px 40px;
-  }
-}
-
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 /*--------------------------------------------------------------
 #Mission Section
 --------------------------------------------------------------*/
@@ -1742,14 +1620,10 @@ section,
 .clients .swiper-slide img:hover {
   transform: scale(1.1);
 }
-<<<<<<< HEAD
 .img-slider{
   width: 60%;
   
 }
-=======
-
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1772,7 +1646,6 @@ section,
   line-height: 40px;
 }
 
-<<<<<<< HEAD
 /* Phone View - max 480px */
 @media (max-width: 480px) {
   .stats .stats-item .purecounter {
@@ -1781,8 +1654,6 @@ section,
 }
 
 
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 .stats .stats-item p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   padding: 0; /* Remove padding */
@@ -2309,11 +2180,7 @@ section,
 }
 
 .Brand1 .Brand1-content .Brand1-info h4 a:hover {
-<<<<<<< HEAD
   color:black;
-=======
-  color: var(--accent-color);
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 }
 
 .Brand1 .Brand1-content .Brand1-info p {
@@ -2734,7 +2601,6 @@ section,
   .features .features-item+.features-item {
     margin-top: 40px;
   }
-<<<<<<< HEAD
 
   
 }
@@ -2742,18 +2608,10 @@ section,
   color: #ffc501;
   font-weight: 700;
   font-size: 40px;
-=======
-}
-
-.features .features-item h3 {
-  font-weight: 700;
-  font-size: 26px;
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   text-align: start;
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 /* Phone View - max 480px */
 @media (max-width: 480px) {
   .features .features-item h3 {
@@ -2763,8 +2621,6 @@ section,
 }
 
 
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 .features .features-item ul {
   list-style: none;
   padding: 0;
@@ -2797,14 +2653,11 @@ section,
 }
 
 
-<<<<<<< HEAD
 .products-details-title {
   color: #ffc509; 
   font-weight: bolder; 
   font-size: 40px;
 }
-=======
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 
 
 
@@ -2813,15 +2666,9 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .card {
-<<<<<<< HEAD
   background-color: #ffc501;
   color: var(--default-color);
   /* border: 2px solid color-mix(in srgb, yellow, transparent 85%); */
-=======
-  background-color: var(--surface-color);
-  color: var(--default-color);
-  border: 2px solid color-mix(in srgb, yellow, transparent 85%);
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
   position: relative;
   border-radius: 0;
   height: 100%;
@@ -2856,11 +2703,7 @@ section,
 }
 
 .services .card a:hover {
-<<<<<<< HEAD
   color: black;
-=======
-  color: var(--accent-color);
->>>>>>> ee522eb14960ff5a39f4db4f12c923789a41ab64
 }
 
 .services .card p {
