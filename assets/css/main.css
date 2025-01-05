@@ -1293,8 +1293,7 @@ section,
     animation: slide-text 12s infinite ease-in-out;
   }}
 
-  
-/*--------------------------------------------------------------
+  /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {
@@ -1364,6 +1363,26 @@ section,
 
 .about .about-images img {
   border-radius: 10px;
+
+/* Media Queries for Phone and Web Views */
+}
+
+.phone-view {
+  display: block; /* Default for phone view */
+}
+
+.web-view {
+  display: none; /* Hidden by default for phone view */
+}
+
+@media (min-width: 768px) {
+  .phone-view {
+    display: none; /* Hidden for web view */
+  }
+
+  .web-view {
+    display: block; /* Displayed for web view */
+  }
 }
 
 
