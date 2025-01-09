@@ -953,7 +953,25 @@ section,
   position: relative;
   padding: 140px 0 0 0;
 }
+.hero-title {
+  /* padding-left: 55px; */
+  font-size: 2.8rem; /* Adjust as needed */
+  line-height: 1.5;
+  text-align: center;
+  direction: rtl; /* Ensure correct direction for Arabic */
+}
 
+
+
+
+/* .hero-title.large { */
+
+  /* padding-left: 135px; */
+  /* font-size: 36px;  */
+  /* تكبير حجم النص */
+  /* color: #ff5722;  */
+  /* لون مميز لزيادة الوضوح */
+/* } */
 
 
 .hero .hero-bg {

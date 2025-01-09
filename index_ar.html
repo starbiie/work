@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Danny Food Trading Company</title>
+  <meta name="description" content="Danny Food Trading Company - Quality food products and trading services.">
+  <meta name="keywords" content="Danny Food, Food Trading, Quality Food Products, Trading Services">
+
+  <!-- Favicons -->
+  <link href="assets/img/Danny_Full_White(Footer).png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+ 
+  <script>
+ function toggleLanguage() {
+  const currentURL = window.location.href;
+  const translateBtn = document.getElementById('translate_btn');
+
+  if (currentURL.includes('index.html')) {
+    // Switch to Arabic
+    translateBtn.textContent = 'English'; // Update button text
+    window.location.href = 'index_ar.html';
+  } else if (currentURL.includes('index_ar.html')) {
+    // Switch to English
+    translateBtn.textContent = 'Arabic'; // Update button text
+    window.location.href = 'index.html';
+  } else {
+    // Default to English
+    window.location.href = 'index.html';
+  }
+}
+  </script>
+<script>
+  // Initialize CountUp instances with Latin numerals
+  var totalProducts = new CountUp('total-products', 0, 2000);
+  var suppliers = new CountUp('suppliers', 0, 200);
+  var customers = new CountUp('customers', 0, 10000);
+  var experience = new CountUp('experience', 0, 30);
+
+  // Function to check if the stats section is in view
+  function checkIfInView() {
+    var statsSection = document.getElementById('stats');
+    var rect = statsSection.getBoundingClientRect();
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      // Start animation
+      totalProducts.start();
+      suppliers.start();
+      customers.start();
+      experience.start();
+      // Remove the event listener after the animation starts
+      window.removeEventListener('scroll', checkIfInView);
+    }
+  }
+
+  // Add event listener to trigger on scroll
+  window.addEventListener('scroll', checkIfInView);
+  checkIfInView(); // Initial check if the section is in view
+</script>
+
+
+  <style>
+
+.btn-primary {
+  font-size: 12px; /* Adjust font size */
+  padding: 15px 30px; /* Adjust padding for width and height */
+  width: 115px; /* Set width */
+  height: 50px; /* Set height */
+  border-radius: 8px; /* Optional: make the button more rounded */
+  background-color: rgba(255, 197, 1, 0.7); /* RGBA format */
+  text-align: center; /* Ensure text is centered */
+  border: none;
+}
+
+
+
+.swiper-pagination {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.btn-primary:hover {
+  background-color: #ffc501; /* Adjust hover color if needed */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+    iframe.skiptranslate,
+    .goog-te-banner-frame,
+    #google_translate_element {
+      display: none !important;
+    }
+
+    body {
+      top: 0 !important;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .lang-wrapper .content {
+      text-align: left;
+      order: 1;
+    }
+
+    .lang-wrapper .about-images {
+      order: 2;
+    }
+
+    .lang-ar .content {
+      text-align: right;
+      order: 2;
+    }
+
+    .lang-ar .about-images {
+      order: 1;
+    }
+
+    .lang-en .cta-button {
+      text-align: left;
+      direction: ltr;
+    }
+
+    .lang-en .cta-button::after {
+      content: '→';
+      margin-left: 5px;
+    }
+
+    .lang-ar .cta-button {
+      text-align: right;
+      direction: rtl;
+    }
+
+    .lang-ar .cta-button::after {
+      content: '←';
+      margin-right: 5px;
+      margin-left: 0;
+    }
+  </style>
+</head>
+<body class="index-page">
+    <header id="header" class="header fixed-top">
+
+        <div class="branding d-flex align-items-center">
+    
+          <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/Danny_Text_Logo(Nav).png" alt="" style="width: 120px; height: auto; float: left;">
+            </a>
+    
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index_ar.html" class="active">الرئيسية</a></li>
+                <li><a href="products_ar.html">منتجاتنا</a></li>
+                <li><a href="servicses_ar.html">الأقسام</a></li>
+                <li><a href="about_us_ar.html">من نحن</a></li>
+                <li><a href="contact_us_ar.html" >اتصل بنا</a></li>
+                <div id="google_translate_element"></div>
+                <button id="translate_btn" onclick="toggleLanguage()">EN</button>
+
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+          </div>
+    
+        </div>
+      </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section accent-background">
+      <div class="hero-bg-container">
+        <img src="assets/img/bg.jpg" alt="الخلفية 1" class="hero-bg">
+        <img src="assets/img/bg4.jpg" alt="الخلفية 2" class="hero-bg">
+        <img src="assets/img/hero-bg.jpg" alt="الخلفية 3" class="hero-bg">
+      </div>
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <div class="sliding-titles">
+              <h2 class="hero-title"><span>الموزع الرائد للسلع الاستهلاكية في السعودية</span></h2>
+              <h2 class="hero-title"><span>أهم موزع للسلع الاستهلاكية في المملكة العربية السعودية</span></h2>
+              <h2 class="hero-title large"><span>موثوق من الشركاء ومقدر من العملاء</span></h2>
+              
+            </div>
+  
+            <p class="hero-sub-titile web-text">
+              وجهتك الموثوقة للحصول على منتجات غذائية عالية الجودة، تلبي احتياجاتك وتتجاوز توقعاتك.
+            </p>
+  
+            <p class="hero-sub-titile phone-text">
+              مصدرك الموثوق للمنتجات الغذائية ذات الجودة العالية التي تتجاوز التوقعات.
+            </p>
+  
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">ابدأ الآن</a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2"></div>
+        </div>
+      </div>
+  
+      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="container position-relative">
+          <div class="row gy-4 T">
+  
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-easel"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">التوافر</a></h4>
+                <p>مهمتنا هي ضمان توافر جميع منتجاتنا على مدار العام.</p>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-gem"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">الجملة</a></h4>
+                <p>تقديم أفضل العلامات التجارية الغذائية محليًا لقطاع الشركات.</p>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">التجزئة</a></h4>
+                <p>توزيع العلامات التجارية المتميزة للوصول إلى المستهلكين.</p>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-command"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">أفضل الأسعار</a></h4>
+                <p>نضمن توفر المنتجات على مدار العام بأسعار تنافسية للغاية.</p>
+              </div>
+            </div><!--End Icon Box -->
+  
+          </div>
+        </div>
+      </div>
+  
+    </section><!-- /Hero Section -->
+  
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+  
+          <!-- Left Side Content -->
+          <div class="col-lg-6 content" data-aos="fade-right">
+            <p class="who-we-are">من نحن</p>
+            <h3>شركة داني لتجارة الأغذية</h3>
+            <p class="fst-italic">
+              كمزود رائد للمواد الغذائية والمشروبات في المنطقة، نحن ملتزمون بالتميز في التسليم.
+            </p>
+  
+            <!-- Phone View List -->
+            <ul class="phone-view">
+              <li><i class="bi bi-check-circle iconn"></i> <span>أكثر من مجرد خدمة، ملتزمون بالتفاني</span></li>
+              <li><i class="bi bi-check-circle iconn"></i> <span>نوصل النكهة والعناية بسهولة</span></li>
+              <li><i class="bi bi-check-circle iconn"></i> <span>خدمة استثنائية، روابط دائمة</span></li>
+            </ul>
+  
+            <!-- Web View List -->
+            <ul class="web-view">
+              <li><i class="bi bi-check-circle iconn"></i> <span>تفانينا يتجاوز مجرد التوفير؛</span></li>
+              <li><i class="bi bi-check-circle iconn"></i> <span> نقدم النكهات والراحة إلى طاولتك بشغف.</span></li>
+              <li><i class="bi bi-check-circle iconn"></i> <span>نبني علاقات دائمة بخدمة استثنائية.</span></li>
+            </ul>
+  
+            <a href="about.html" class="read-more"><span>اقرأ المزيد</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+  
+          <!-- Right Side Image (Full Height) -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <img src="assets/img/bg4.jpg" class="img-fluid" alt="صورة عنا" style="width: 650px; height: 52vh; border-radius: 8px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/alfai[1].png" class="img-fluid img-slider" alt="الفي">
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/allrabie[1].png" class="img-fluid img-slider" alt="الربيع">
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/lipton[1].png" class="img-fluid img-slider" alt="ليبتون">
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/pepsico[1].png" class="img-fluid img-slider" alt="بيبسيكو"style="filter: grayscale(100%) brightness(0);">
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/ulker[1].png" class="img-fluid img-slider" alt="أولكر">
+          </div>
+          <div class="col-md-2 col-4 text-center">
+            <img src="assets/img/brands/tang[1].jpg" class="img-fluid img-slider" alt="تانج">
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="brands_detail_page.html" class="btn btn-primary" style=" color: black; font-weight: bold;">عرض الكل</a>
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-7">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span id="total-products">٢٠٠٠</span>
+                    <p><strong>إجمالي المنتجات</strong></p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-box flex-shrink-0"></i>
+                  <div>
+                    <span id="suppliers">٢٠٠</span>
+                    <p><strong>الموردين</strong></p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-trophy flex-shrink-0"></i>
+                  <div>
+                    <span id="customers">١٠٠٠٠</span>
+                    <p><strong>العملاء</strong></p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-people flex-shrink-0"></i>
+                  <div>
+                    <span id="experience">٣٠</span>
+                    <p><strong>الخبرة</strong></p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+<!-- قسم العلامات التجارية -->
+<section id="Brand1" class="Brand1 section">
+
+  <!-- عنوان القسم -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>منتجات داني</h2>
+    <p>نوفر لك الجودة التي يمكنك الوثوق بها، مصممة لتلبية احتياجاتك</p>
+  </div><!-- نهاية عنوان القسم -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features1">
+              <img src="assets/img/frezen.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="Brand1-details.html" title="مزيد من التفاصيل">مُجَمَّد</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">مُجَمَّد طازج، مُحَفَّظ بشكل مثالي</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-product">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features2">
+              <img src="assets/img/dryfood.png" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="service-details.html" title="مزيد من التفاصيل">الطعام الجاف</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">تغذية أساسية، جاهزة للذهاب</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features3">
+              <img src="assets/img/chilledfd.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="products.html#features3" title="مزيد من التفاصيل">الطعام المبرد</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">الانتعاش في كل قضمة</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features4">
+              <img src="assets/img/non_food_LOGO.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="Brand1-details.html" title="مزيد من التفاصيل">منتجات غير غذائية</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">جودة في كل منتج</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features3">
+              <img src="assets/img/soft-drinks.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="products.html" title="مزيد من التفاصيل">المشروبات</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">إنعاش في كل رشفة</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features1">
+              <img src="assets/img/products/oil-min.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="Brand1-details.html" title="مزيد من التفاصيل">زيت الطعام</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">غني بالنكهة، مثالي للطهي</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features1"></a>
+              <img src="assets/img/grocery-getty-f.webp" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="Brand1-details.html" title="مزيد من التفاصيل">البقالة</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">الأساسيات، مُسَتَحَقة</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 Brand1-item isotope-item filter-app">
+          <div class="Brand1-content h-100">
+            <a href="products_ar.html#features2"></a>
+              <img src="assets/img/products/bake-min.jpg" class="img-fluid  styled-img" alt="صورة العلامة التجارية">
+            </a>
+            <div class="Brand1-info">
+              <h4><a href="Brand1-details.html" title="مزيد من التفاصيل">المخابز</a></h4>
+              <p style="color: rgba(0, 0, 0, 0.703);">مخبوزات طازجة، فقط من أجلك</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- نهاية عرض العلامات التجارية -->
+
+    </div>
+
+  </div>
+
+</section><!-- /قسم العلامات التجارية -->
+
+    <!-- قسم العملاء، أعضاء الفريق -->
+<section id="team" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>عملاؤنا</h2>
+    <p>مكرسون لتقديم التميز وتمكين نمو العملاء</p>
+  </div><!-- نهاية عنوان القسم -->
+
+  <div class="container">
+    <div class="swiper init-swiper">
+      <!-- Swiper Wrapper -->
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/5hotel.jpg" class="img-fluid" alt="">
+            <h4>الفنادق</h4>
+            <span>ضمان الفخامة مع أفضل الإمدادات</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/offices.jpg" class="img-fluid" alt="">
+            <h4>المكاتب</h4>
+            <span>تعزيز الإنتاجية مع الأساسيات</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/bakery.jpg" class="img-fluid" alt="">
+            <h4>المخابز</h4>
+            <span>شريكك في التميز في المخبوزات</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+
+        <!-- إضافة شرائح إضافية هنا -->
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/rest.webp" class="img-fluid" alt="">
+            <h4>المطاعم</h4>
+            <span>تمكين المطابخ بالتميز</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets\img\3d-rendering-cartoon-welcome-door_23-2151645384.png" class="img-fluid" alt="">
+            <h4>المقاهي</h4>
+            <span>غذاء الإبداع بالجودة</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/many-more.webp" class="img-fluid" alt="">
+            <h4>والكثير غيرهم..</h4>
+            <span>تلبية كل حاجة بامتياز</span>
+          </div>
+        </div><!-- نهاية عضو الفريق -->
+      </div><!-- نهاية wrapper swiper -->
+
+      <!-- التصفح swiper -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section><!-- نهاية قسم الفريق -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+  <!-- عنوان القسم -->
+<div class="container section-title" data-aos="fade-up">
+    <h2>إذا كنت بحاجة، فقط أرسل لنا رسالة</h2>
+    <p>نحن من عشاق الأنظمة الصديقة للبيئة بشكل كبير</p>
+  </div><!-- نهاية عنوان القسم -->
+  
+
+   
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gx-lg-0 gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>العنوان</h3>
+                  <p>شارع 12، حي الثقبة</p>
+                </div>
+              </div><!-- End Info Item -->
+          
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>اتصل بنا</h3>
+                  <p>966569574356 / 966508669648 <br> الهاتف ☎: 013 8987158</p>
+                </div>
+              </div><!-- End Info Item -->
+          
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>راسلنا</h3>
+                  <p>sales@dannyfood.co</p>
+                </div>
+              </div><!-- End Info Item -->
+          
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h3>ساعات العمل:</h3>
+                  <p>24/7</p>
+                </div>
+              </div><!-- End Info Item -->
+          
+            </div>
+          </div>
+          
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="اسمك" required="">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required="">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="الموضوع" required="">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="8" placeholder="رسالتك" required=""></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">جاري التحميل</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">تم إرسال رسالتك. شكرًا لك!</div>
+                  <button type="submit">إرسال الرسالة</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+ 
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/Danny_Full_White(Footer).png" alt="" style="height: 250px;width: 90px;">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>روابط مفيدة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">منتجاتنا</a></li>
+            <li><a href="#">الأقسام</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>منتجاتنا</h4>
+          <ul>
+            <li><a href="#">الأطعمة الجافة</a></li>
+            <li><a href="#">الأطعمة المجمدة</a></li>
+            <li><a href="#">الأطعمة المبردة</a></li>
+            <li><a href="#">غير غذائية</a></li>
+            <li><a href="#">منتجاتنا</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>تواصل معنا</h4>
+          <p>شارع آدم 108</p>
+          <p>نيويورك، NY 535022</p>
+          <p>الولايات المتحدة</p>
+          <p class="mt-4"><strong>الهاتف:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>البريد الإلكتروني:</strong> <span>info@example.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>حقوق الطبع محفوظة</span> <strong class="px-1 sitename">Azora Ads</strong> <span>جميع الحقوق محفوظة</span></p>
+    </div>
+  </footer>
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper', {
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 1,
+      }
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+<script>
+  new PureCounter();
+</script>
+
+
+</body>
+
+</html>

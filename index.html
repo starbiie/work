@@ -30,59 +30,24 @@
 
  
   <script>
-    function preventAutoTranslate() {
-      const iframes = document.querySelectorAll(
-        "iframe.skiptranslate, .VIpgJd-ZVi9od-xl07Ob-OEVmcd"
-      );
-      iframes.forEach((iframe) => iframe.remove());
-      document.body.style.top = "0px";
-    }
-
-    let currentLanguage = "en";
     function toggleLanguage() {
-      preventAutoTranslate();
-      const newLang = currentLanguage === "en" ? "ar" : "en";
-      document.cookie = `googtrans=/en/${newLang}; path=/;`;
-      currentLanguage = newLang;
+  const currentURL = window.location.href;
+  const translateBtn = document.getElementById('translate_btn');
 
-      // Toggle body class for language-specific styles
-      document.body.classList.toggle("lang-ar", currentLanguage === "ar");
-      document.body.classList.toggle("lang-en", currentLanguage === "en");
+  if (currentURL.includes('index.html')) {
+    // Switch to Arabic
+    translateBtn.textContent = 'English'; // Update button text
+    window.location.href = 'index_ar.html';
+  } else if (currentURL.includes('index_ar.html')) {
+    // Switch to English
+    translateBtn.textContent = 'Arabic'; // Update button text
+    window.location.href = 'index.html';
+  } else {
+    // Default to English
+    window.location.href = 'index.html';
+  }
+}
 
-      document.getElementById("translate_btn").innerText =
-        currentLanguage === "ar" ? "Translate to English" : "Translate to Arabic";
-
-      window.location.reload();
-    }
-
-    window.onload = function () {
-      preventAutoTranslate();
-      const isArabic = document.cookie.includes("googtrans=/en/ar");
-      document.body.classList.toggle("lang-ar", isArabic);
-      document.body.classList.toggle("lang-en", !isArabic);
-      currentLanguage = isArabic ? "ar" : "en";
-      document.getElementById("translate_btn").innerText =
-        isArabic ? "English" : "Arabic";
-    };
-
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,ar",
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        },
-        "google_translate_element"
-      );
-    }
-
-    (function () {
-      const script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src =
-        "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      document.head.appendChild(script);
-    })();
   </script>
 
   <style>
@@ -205,9 +170,8 @@
 
             <div id="google_translate_element"></div>
 
-            <button id="translate_btn" onclick="toggleLanguage()">
-              Arabic
-            </button>
+            <button id="translate_btn" onclick="toggleLanguage()">AR</button>
+
             <!-- <button onclick="resetToEnglish()">English</button> -->
 
 
@@ -233,9 +197,18 @@
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <div class="sliding-titles">
-              <h2 class="hero-title"><span>Saudi Arabia leading FMCG Distributor</span></h2>
-              <h2 class="hero-title"><span>Premier FMCG Distributor in Saudi Arabia</span></h2>
-              <h2 class="hero-title"><span>Maximizing Returns for Our Consumers</span></h2>
+              <h2 class="hero-title">    
+                <span>Delivering Quality and Value</span><br>
+                <!-- <span>Every Day, Across Saudi Arabia</span> -->
+              </h2>
+              <h2 class="hero-title">   
+                <span>Maximizing Returns for Consumers</span><br>
+                <!-- <span>Through Exceptional FMCG Solutions</span> -->
+              </h2>
+              <h2 class="hero-title">  
+                <span>Trusted by Partners, Valued by Customers</span><br>
+                <!-- <span>For Over a Decade of Excellence</span> -->
+              </h2>
             </div>
 
 
@@ -620,11 +593,20 @@
         <div class="swiper-slide">
           <div class="member">
             <img src="assets\img\3d-rendering-cartoon-welcome-door_23-2151645384.png" class="img-fluid" alt="">
-            <h4>CAFE</h4>
+            <h4>CAFES</h4>
             <span>Nourishing Creativity with Quality</span>
           
           </div>
         </div><!-- End Team Member -->
+
+        <div class="swiper-slide">
+          <div class="member">
+            <img src="assets/img/universities.jpeg" class="img-fluid" alt="">
+            <h4>UNIVERSITIES</h4>
+            <span>Empowering Minds with Excellence</span>
+          </div>
+        </div><!-- End Team Member -->
+        
 
         <div class="swiper-slide">
           <div class="member">
@@ -668,7 +650,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>12Th Street Al-Thuqbah Dist.</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -676,7 +658,7 @@
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>966569574356 / 96650866 9648 /<br> Telephone ☎:013 8987158 </p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -684,7 +666,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>sales@dannyfood.co </p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -692,9 +674,10 @@
                 <i class="bi bi-clock flex-shrink-0"></i>
                 <div>
                   <h3>Open Hours:</h3>
-                  <p>Mon-Sat: 11AM - 23PM</p>
+                  <p>24/7</p>
                 </div>
               </div><!-- End Info Item -->
+              
 
             </div>
 

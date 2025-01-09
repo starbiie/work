@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شبكة الصور</title>
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .grid-container {
+      margin-top: 5px;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* العرض على الشاشات الكبيرة (الافتراضي) */
+    .grid-item {
+      flex: 0 0 calc(18% - 10px);
+      max-width: calc(18% - 10px);
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .grid-item img {
+      max-width: 60%;
+      max-height: 60%;
+      object-fit: contain;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* الشاشات المتوسطة (<768px) */
+    @media (max-width: 768px) {
+      .grid-item {
+        flex: 0 0 calc(25% - 10px);
+        max-width: calc(25% - 10px);
+        height: 120px;
+      }
+    }
+
+    /* الشاشات الصغيرة (<576px) - شبكتان لكل صف */
+    @media (max-width: 576px) {
+      .grid-container {
+        padding: 0 10px;
+      }
+
+      .grid-item {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: 100px;
+      }
+
+      .grid-item img {
+        max-width: 70%;
+        max-height: 70%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container section-title" data-aos="fade-up">
+    <div class="header-row">
+      <div class="section-title">
+        <h2>جميع العلامات التجارية الكبرى</h2>
+        <p>نقدم التميز ونسعى لتحقيق نجاح العملاء</p>
+      </div>
+    </div>
+    <section id="ImageGrid" class="ImageGrid section">
+        <div class="container">
+          <!-- شبكة الصور -->
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="assets/img/brands/2560px-Saudia_logo_1@2x[1].png" class="img-fluid styled-img" alt="صورة 1">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/alfai[1].png" class="img-fluid styled-img" alt="صورة 2">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/allrabie[1].png" class="img-fluid styled-img" alt="صورة 3">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/colgate[1].jpg" class="img-fluid styled-img" alt="صورة 4">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/lipton[1].png" class="img-fluid styled-img" alt="صورة 5">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/luna[1].jpg" class="img-fluid styled-img" alt="صورة 6">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/pepsico[1].png" class="img-fluid styled-img" alt="صورة 7" style="filter: grayscale(100%) brightness(0);">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/tang[1].jpg" class="img-fluid styled-img" alt="صورة 8">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/tide[1].png" class="img-fluid styled-img" alt="صورة 9">
+            </div>
+            <div class="grid-item">
+              <img src="assets/img/brands/ulker[1].png" class="img-fluid styled-img" alt="صورة 10">
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
